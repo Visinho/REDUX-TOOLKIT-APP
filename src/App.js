@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Navbar from "./components/Navbar";
+import Navbar1 from "./components/Navbar1";
 import CartContainer from "./components/CartContainer";
 import { useDispatch, useSelector } from "react-redux";
 import { calculateTotals, getCartItems } from "./redux/cart/cartSlice";
@@ -29,7 +29,7 @@ if(isLoading){
   return (
     <main>
       {isOpen && <Modal />}
-      <Navbar/>
+      <Navbar1/>
       <CartContainer/>
     </main>
   );
